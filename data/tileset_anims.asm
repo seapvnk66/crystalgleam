@@ -117,24 +117,22 @@ TilesetUndergroundAnim::
 TilesetCaveAnim::
 TilesetQuietCaveAnim::
 	tileframe FlickeringCaveEntrancePalette
-	tileframe ScrollTileRightLeft,      $0:25
+	tileframe ScrollTileRightLeft,            $0:25
 	tileframe FlickeringCaveEntrancePalette
-	tileframe ScrollTileUp,             $0:4e
-	tileframe ScrollTileDown,           $0:4f
-	tileframe ScrollTileLeft,           $0:5e
-	tileframe ScrollTileRight,          $0:5f
+	tileframe ScrollFourTilesUpDownLeftRight, $0:4c
+	tileframe AnimateLavaBubbleTile2,         $0:3c
+	tileframe AnimateLavaBubbleTile1,         $0:3d
 	tileframe FlickeringCaveEntrancePalette
-	tileframe AnimateWaterfallTiles,    $0:26
+	tileframe AnimateWaterfallTiles,          $0:26
 	tileframe FlickeringCaveEntrancePalette
-	tileframe AnimateLavaBubbleTile2,   $0:3c
-	tileframe AnimateLavaBubbleTile1,   $0:3d
+	tileframe ScrollFourTilesUpDownLeftRight, $0:4c
+	tileframe DoNothing
 	tileframe DoneTileAnimation
 
 TilesetPeaksAnim::
 	tileframe FlickeringCaveEntrancePalette
 	tileframe ScrollTileRightLeft,      $0:25
 	tileframe FlickeringCaveEntrancePalette
-	tileframe DoNothing
 	tileframe DoNothing
 	tileframe DoNothing
 	tileframe DoNothing
@@ -161,7 +159,6 @@ TilesetIcePathAnim::
 	tileframe FlickeringCaveEntrancePalette
 	tileframe ScrollTileRightLeft,      $0:10
 	tileframe FlickeringCaveEntrancePalette
-	tileframe DoNothing
 	tileframe DoNothing
 	tileframe DoNothing
 	tileframe DoNothing
@@ -229,7 +226,6 @@ TilesetTunnelAnim::
 	tileframe ScrollTileRightLeft,      $0:26
 	tileframe FlickeringCaveEntrancePalette
 	tileframe AnimateLCDTile,           $1:1e
-	tileframe DoNothing
 	tileframe DoNothing
 	tileframe DoNothing
 	tileframe FlickeringCaveEntrancePalette
