@@ -23,8 +23,6 @@ MACRO? tileframe
 ENDM
 
 TilesetJohtoTraditionalAnim::
-TilesetJohtoModernAnim::
-TilesetJohtoCoastAnim::
 TilesetJohtoOutlandsAnim::
 TilesetJohtoAncientAnim::
 TilesetBattleTowerOutsideAnim::
@@ -34,6 +32,30 @@ TilesetEcruteakShrineAnim::
 	tileframe AnimateWhirlpoolTiles,    $0:30
 	tileframe AnimateRockTiles,         $0:60
 	tileframe DoNothing
+	tileframe AnimateFlowerTile,        $0:03
+	tileframe AnimateRainTiles,         $0:1c
+	tileframe AnimateWaterfallTiles,    $0:34
+	tileframe StandingTileFrame8
+	tileframe DoneTileAnimation
+
+TilesetJohtoModernAnim::
+	tileframe AnimateWaterTile,         $0:14
+	tileframe AnimateRainTiles,         $0:1c
+	tileframe AnimateWhirlpoolTiles,    $0:30
+	tileframe AnimateRockTiles,         $0:60
+	tileframe DoNothing ; reserved for Game Corner animation
+	tileframe AnimateFlowerTile,        $0:03
+	tileframe AnimateRainTiles,         $0:1c
+	tileframe AnimateWaterfallTiles,    $0:34
+	tileframe StandingTileFrame8
+	tileframe DoneTileAnimation
+
+TilesetJohtoCoastAnim::
+	tileframe AnimateWaterTile,         $0:14
+	tileframe AnimateRainTiles,         $0:1c
+	tileframe AnimateWhirlpoolTiles,    $0:30
+	tileframe AnimateRockTiles,         $0:60
+	tileframe AnimateBuoyTiles,         $1:87
 	tileframe AnimateFlowerTile,        $0:03
 	tileframe AnimateRainTiles,         $0:1c
 	tileframe AnimateWaterfallTiles,    $0:34
@@ -65,7 +87,7 @@ TilesetChampionsRoomAnim::
 TilesetPortAnim::
 	tileframe AnimateWaterTile,         $0:14
 	tileframe AnimateRockTiles,         $1:12
-	tileframe DoNothing
+	tileframe AnimateBuoyTiles,         $0:05
 	tileframe DoNothing
 	tileframe DoNothing
 	tileframe DoNothing
@@ -157,11 +179,7 @@ TilesetParkAnim::
 
 TilesetIcePathAnim::
 	tileframe FlickeringCaveEntrancePalette
-<<<<<<< HEAD
-	tileframe ScrollTileRightLeft,      $0:10
-=======
-	tileframe AnimateCaveWaterTile,           $0:10
->>>>>>> 0fa2d4218 (Use cave water tile animation based on one by Th3Element05)
+	tileframe AnimateCaveWaterTile,     $0:10
 	tileframe FlickeringCaveEntrancePalette
 	tileframe DoNothing
 	tileframe DoNothing
@@ -227,11 +245,7 @@ TilesetPokeComCenterAnim::
 
 TilesetTunnelAnim::
 	tileframe FlickeringCaveEntrancePalette
-<<<<<<< HEAD
-	tileframe ScrollTileRightLeft,      $0:26
-=======
-	tileframe AnimateCaveWaterTile,           $0:26
->>>>>>> 0fa2d4218 (Use cave water tile animation based on one by Th3Element05)
+	tileframe AnimateCaveWaterTile,     $0:26
 	tileframe FlickeringCaveEntrancePalette
 	tileframe AnimateLCDTile,           $1:1e
 	tileframe DoNothing
