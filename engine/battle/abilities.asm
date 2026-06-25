@@ -2054,7 +2054,7 @@ _GetOpponentAbility:
 	ld b, 0
 .not_suppressed
 	ld a, b
-	pop af
+	pop bc
 	pop bc
 	ret
 
